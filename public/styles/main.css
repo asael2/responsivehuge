@@ -16,3 +16,14 @@ h1 {
   letter-spacing: -0.06em;
   text-align: center;
 }
+
+nav{
+  border: 1px solid green;
+}
+
+
+#menuContainer > a{
+  color: whitesmoke;
+  font-size: 3em;
+  padding: 12px; 
+}
