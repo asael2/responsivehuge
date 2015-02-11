@@ -3,27 +3,91 @@
 body {
   background: #ec008c;
   color: #fff;
+  margin: 0;
 }
-
-h1 {
+h1.home{
+  float: left;
+  background: url(/images/HUGE-white.png)no-repeat center center;
+  height: 24px;
+  width: 60px;
+  text-indent: -1000px;
+  background-size: contain;
+  margin: 24px;
+}
+.huge {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin: 0;
-  font: 20vmin/1 HUGEAvantGardeBold;
-  letter-spacing: -0.06em;
+  font: 10vmin/1 HUGEAvantGardeBold;
+  /*letter-spacing: -0.06em;*/
   text-align: center;
 }
 
 nav{
-  border: 1px solid green;
+  border: 0px solid gray;
+}
+
+  nav .submenu{
+    display: none;
+  }
+  nav .submenu.show{
+    display: block;
+  }
+
+  ul#menuContainer {
+    margin: 0;
+  }
+
+  #menuContainer li{
+    list-style: none;
+    display: inline-block;
+    
+    /*font-size: 1.4em;
+    border:1px solid blue;*/
+    position: relative;
+  }
+
+section.portada{
+  background: url(/images/background-image.jpg) center center;
+  margin: auto;
+  width: 100%;
+  min-height: 640px;
+  line-height: 1em;
+  position: relative;
+  z-index: -1;
+}
+
+#menuContainer > li a{
+  display: block;
+  padding: 28px;
+  font: 3vmin/1 HUGEAvantGardeBold;
+  text-decoration: none;
+  color: white;
+}
+
+#menuContainer > li a:hover{
+  color: #ec008c;
+  background: white;
+}
+
+#menuContainer ul.submenu{
+  position: absolute;
+  background: purple;
+  padding: 0;
 }
 
 
-#menuContainer > a{
-  color: whitesmoke;
-  font-size: 3em;
-  padding: 12px; 
+
+
+section.contenido{
+  background: white;
+  color: black;
+  font: 2vmin/2 GalaxieCopernicusBook;
+  padding: 24px;
 }
+
+
+/*1280*/
