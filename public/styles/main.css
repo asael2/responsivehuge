@@ -6,13 +6,11 @@ body {
   margin: 0;
 }
 h1.home{
-  float: left;
   background: url(/images/HUGE-white.png)no-repeat center center;
-  height: 24px;
   width: 60px;
   text-indent: -1000px;
   background-size: contain;
-  margin: 24px;
+  margin: 12px 24px;
 }
 .huge {
   position: absolute;
@@ -28,6 +26,7 @@ h1.home{
 
 #menuContainer {
   margin: 0;
+  padding: 0;
 }
 
   #menuContainer > li{
@@ -38,8 +37,8 @@ h1.home{
 
   #menuContainer li a{
     display: block;
-    padding: 14px;
-    font: 3vmin/1 HUGEAvantGardeBold;
+    padding: 24px;
+    font: 2vmin/1 HUGEAvantGardeBold;
     text-decoration: none;
     color: white;
   }
@@ -63,6 +62,11 @@ nav .submenu{
   nav #menuContainer .submenu li a{
     font: 2vmin/1 GalaxieCopernicusBook;
     color: black;
+    padding: 12px 24px;
+  }
+  nav #menuContainer .submenu li a:hover{
+    background: whitesmoke;
+    color: #ec008c;
   }
 
 
