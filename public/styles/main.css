@@ -47,7 +47,7 @@ h1.home{
   color: #ec008c;
   background: white;
 }
-#menuContainer > li a.activeMenu{
+#menuContainer > li a.activeBtn{
    color: #ec008c;
   background: white;
 }
