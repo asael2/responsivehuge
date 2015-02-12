@@ -26,29 +26,54 @@ h1.home{
   text-align: center;
 }
 
-nav{
-  border: 0px solid gray;
+#menuContainer {
+  margin: 0;
 }
 
-  nav .submenu{
-    display: none;
-  }
-  nav .submenu.show{
-    display: block;
-  }
-
-  ul#menuContainer {
-    margin: 0;
-  }
-
-  #menuContainer li{
+  #menuContainer > li{
     list-style: none;
-    display: inline-block;
-    
-    /*font-size: 1.4em;
-    border:1px solid blue;*/
-    position: relative;
+     position: relative;
+     display: inline-block;
   }
+
+  #menuContainer li a{
+    display: block;
+    padding: 14px;
+    font: 3vmin/1 HUGEAvantGardeBold;
+    text-decoration: none;
+    color: white;
+  }
+
+#menuContainer > li a:hover{
+  color: #ec008c;
+  background: white;
+}
+
+nav .submenu{
+    display: none;
+    position: absolute;
+    padding: 0;
+  }
+  nav .submenu li{
+    list-style: none;
+    background: white;
+    padding: 0px;
+    white-space: nowrap;
+  }
+  nav #menuContainer .submenu li a{
+    font: 2vmin/1 GalaxieCopernicusBook;
+    color: black;
+  }
+
+
+    nav .submenu.show{
+      display: block;
+
+    }
+
+
+
+
 
 section.portada{
   background: url(/images/background-image.jpg) center center;
@@ -59,29 +84,6 @@ section.portada{
   position: relative;
   z-index: -1;
 }
-
-#menuContainer > li a{
-  display: block;
-  padding: 28px;
-  font: 3vmin/1 HUGEAvantGardeBold;
-  text-decoration: none;
-  color: white;
-}
-
-#menuContainer > li a:hover{
-  color: #ec008c;
-  background: white;
-}
-
-#menuContainer ul.submenu{
-  position: absolute;
-  background: purple;
-  padding: 0;
-}
-
-
-
-
 section.contenido{
   background: white;
   color: black;
