@@ -45,6 +45,8 @@ window.onload = function () {
 
 		}
 	};
+
+	
 	
 	function activateMenu(menuId){	
 		var menuBtn = $id('menuBtn'+[menuId]);
@@ -53,6 +55,8 @@ window.onload = function () {
 		menuBtn.setAttribute("class", "activeBtn")
 		// Show submenu if exist
 		subMenuUl ? subMenuUl.setAttribute("class", "submenu show") : menuBtn.setAttribute("class", "activeBtn");
+
+		// menuBtn.onclick(console.log("clicked!!!"))
 	};
 
 	function clearMenus(menuId){

@@ -38,7 +38,7 @@ h1.home{
   #menuContainer li a{
     display: block;
     padding: 24px;
-    font: 2vmin/1 HUGEAvantGardeBold;
+    font: 1.2em HUGEAvantGardeBold;
     text-decoration: none;
     color: white;
   }
@@ -64,7 +64,7 @@ nav .submenu{
     white-space: nowrap;
   }
   nav #menuContainer .submenu li a{
-    font: 2vmin/1 GalaxieCopernicusBook;
+    font: 0.9em GalaxieCopernicusBook;
     color: black;
     padding: 12px 24px;
   }
@@ -78,10 +78,6 @@ nav .submenu{
       display: block;
 
     }
-
-
-
-
 
 section.portada{
   background: url(/images/background-image.jpg) center center;
@@ -99,5 +95,58 @@ section.contenido{
   padding: 24px;
 }
 
+ ul#menuContainer {
+  display: block;
+  }
+  ul#menuMobContainer{
+    display: none;
+  }
 
-/*1280*/
+
+/*Mobile version-----------------------------*/
+@media only screen and (max-width:50em) { 
+  body{
+    background: black;
+  }
+  #menuContainer > li:nth-child(1){
+    background: #ec008c;
+
+  }
+
+  ul#menuContainer {
+    width: 90%;
+    }
+
+  #menuContainer > li{
+    border: 1px solid blue;
+    display: block;
+    background: white;
+  }
+  #menuContainer > li > a{
+   color: black;
+  }
+  nav .submenu{
+    position: relative;
+  }
+  nav .submenu::before{
+    content: "";
+    
+      width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
+  }
+
+section.portada{
+  max-height: 240px;
+}
+
+
+}
+
+
+
+
+
