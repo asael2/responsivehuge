@@ -47,6 +47,10 @@ h1.home{
   color: #ec008c;
   background: white;
 }
+#menuContainer > li a.activeMenu{
+   color: #ec008c;
+  background: white;
+}
 
 nav .submenu{
     display: none;
