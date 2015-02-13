@@ -107,14 +107,18 @@ section.contenido{
   }
 #courtain{
 background: rgba(0, 0, 0, 0.5);
-width: 100%;
+
 height: 100%;
 position: absolute;
-display: none;
+  width: 1%;
+/*display: none;*/
+/*-webkit-transition: width 2s;
+  transition: width 2s;*/
 }
 
 #courtain.show{
   display: block;
+  width: 100%;
 }
 
 
@@ -226,9 +230,13 @@ display: none;
 
 #container.saved{
   left: 0px;
+    -webkit-transition:  left 1s;
+  transition:  left 1s;
 }
 #container.showed{
   left: 340px;
+  -webkit-transition:  left 1s;
+  transition:  left 1s;
 }
 .huge{
   display: none
@@ -243,6 +251,10 @@ display: none;
   transform: inherit;
   text-align: left;
 }
+
+
+
+
 
 }
 

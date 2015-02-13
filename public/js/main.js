@@ -5,7 +5,7 @@ window.onload = function () {
 	function $cln(id){return document.getElementsByClassName(id)};	
 	function hasClass(element, cls) {return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;};
 	
-	function reqMenu(){	
+	function reqMenu(){
 		var oReq = new XMLHttpRequest();
 		function myResponse () {
 			var menuObj = JSON.parse(this.responseText);
@@ -56,7 +56,7 @@ window.onload = function () {
 		};
 	};
 	
-	function activateMenu(menuId){	
+	function activateMenu(menuId){
 		var menuBtn = $id('menuBtn'+[menuId]);
 		var subMenuUl = $id('submenu'+[menuId]);
 		//Clicked button add class 
@@ -80,9 +80,7 @@ window.onload = function () {
 				subActivos[a].setAttribute("class", "submenu");
 			}
 		}
-		
-		// console.log(btnsActivos);
-		// console.log(subActivos);
+
 	};
 
 	// global functions printed with inner-html, not best practice
@@ -95,6 +93,8 @@ window.onload = function () {
 	
 	window.clickedMenuItem = function(){
 		$id('courtain').setAttribute("class", "hide");
+		$id('container').setAttribute("class", "saved");
+		$id('iconSpan').setAttribute("class", "saved");
 		clearMenus();
 	};
 
