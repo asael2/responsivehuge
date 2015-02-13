@@ -1,18 +1,9 @@
 'use strict'
 window.onload = function () {
 	var menuId;
-	function $id(id){
-		return document.getElementById(id)
-	};
-function hasClass(element, cls) {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-}
-
-
-
-	function $cln(id){
-		return document.getElementsByClassName(id)
-	};	
+	function $id(id){return document.getElementById(id)};
+	function $cln(id){return document.getElementsByClassName(id)};	
+	function hasClass(element, cls) {return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;};
 	
 	function reqMenu(){	
 		var oReq = new XMLHttpRequest();
@@ -42,7 +33,7 @@ function hasClass(element, cls) {
 				
 				for (j = 0; j < subMenuItem.items.length; j++){
 					var submenu = $id('submenu'+[i]);
-					submenu.innerHTML += '<li><a href="'+subMenuItem.items[j].url+'">'+subMenuItem.items[j].label+'</a></li>';
+					submenu.innerHTML += '<li><a onclick="clickedMenuItem('+i+j+')" href="'+subMenuItem.items[j].url+'">'+subMenuItem.items[j].label+'</a></li>';
 				}		
 			}else{ // NO tiene submenus
 				menuContainer.innerHTML += '<li> <a id="menuBtn'+i+'" onclick="clickedMenu('+i+')" href="'+elMenu[i].url+'">'+elMenu[i].label+'</a></li>';
@@ -101,6 +92,10 @@ function hasClass(element, cls) {
 		clearMenus();	
 		activateMenu(menuId);
 		$id('courtain').setAttribute("class", "show");	
+	};
+	window.clickedMenuItem = function(){
+		$id('courtain').setAttribute("class", "hide");
+		clearMenus();
 	};
 
 	//Request menu
