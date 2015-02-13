@@ -1,5 +1,7 @@
 # Huge Navigation Exercise by asael2@gmail.com
 
+[![Join the chat at https://gitter.im/asael2/responsivehuge](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/asael2/responsivehuge?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Overview
 
 This exercise will have the candidate build a responsive site navigation driven by an AJAX request.
