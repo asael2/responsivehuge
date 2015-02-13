@@ -12,7 +12,7 @@ h1.home{
   background-size: contain;
   margin: 12px 24px;
 }
-.huge {
+.huge, .huge-mobile {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,6 +22,9 @@ h1.home{
   font: 10vmin/1 HUGEAvantGardeBold;
   /*letter-spacing: -0.06em;*/
   text-align: center;
+}
+.huge-mobile{
+  display: none
 }
 
 #menuContainer {
@@ -76,7 +79,7 @@ nav .submenu{
 
     nav .submenu.show{
       display: block;
-
+      z-index: 1;
     }
 
 section.portada{
@@ -91,8 +94,9 @@ section.portada{
 section.contenido{
   background: white;
   color: black;
-  font: 2vmin/2 GalaxieCopernicusBook;
+  font: 1em GalaxieCopernicusBook;
   padding: 24px;
+  text-align: justify;
 }
 
  ul#menuContainer {
@@ -128,8 +132,9 @@ display: none;
     padding: 12px 24px;
     position: fixed;
     z-index: 4;
+    margin-top: -48px;
   }
-/*  #menuContainer > li:nth-child(2){
+ /* #menuContainer > li:nth-child(2){
     
   }*/
 
@@ -148,6 +153,10 @@ display: none;
   }
   #menuContainer > li > a{
     color: black;
+  }
+  #menuContainer > li > a:hover{
+    color: black;
+    background: whitesmoke;
   }
   h1.home{
    margin: 0;
@@ -205,12 +214,14 @@ display: none;
   }
 
   section.portada{
-    max-height: 240px;
+    min-height: 240px;
+    background-size: cover;
   }
 
 #container {
   position: absolute;
   width: 100%;
+  margin-top: 48px;
 }
 
 #container.saved{
@@ -218,6 +229,19 @@ display: none;
 }
 #container.showed{
   left: 340px;
+}
+.huge{
+  display: none
+}
+.huge-mobile{
+  display: block;
+  position: initial;
+  font-size: 3em;
+  margin: 30px auto 50px auto;
+  top: 0;
+  left: 0;
+  transform: inherit;
+  text-align: left;
 }
 
 }

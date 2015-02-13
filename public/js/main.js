@@ -54,8 +54,12 @@ function hasClass(element, cls) {
 			if(hasClass(this, 'saved')){
 				$id('container').setAttribute("class", "showed");
 				this.setAttribute("class", "showed");
+				$id('courtain').setAttribute("class", "show");
+
 			}else if(hasClass(this, 'showed')){
 				$id('container').setAttribute("class", "saved");
+				$id('courtain').setAttribute("class", "hide");
+				
 				this.setAttribute("class", "saved");
 			}
 		};
@@ -91,13 +95,12 @@ function hasClass(element, cls) {
 	};
 
 
-	// global function printed with inner-html, not a good practice..?
+	// global function printed with inner-html, not best practice
 	window.clickedMenu = function(e){
 		menuId = e;
 		clearMenus();	
 		activateMenu(menuId);
-
-		// $id("courtain").setAttribute("class", "show");;		
+		$id('courtain').setAttribute("class", "show");	
 	};
 
 	//Request menu
