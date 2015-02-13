@@ -85,14 +85,14 @@ window.onload = function () {
 		// console.log(subActivos);
 	};
 
-
-	// global function printed with inner-html, not best practice
+	// global functions printed with inner-html, not best practice
 	window.clickedMenu = function(e){
 		menuId = e;
 		clearMenus();	
 		activateMenu(menuId);
 		$id('courtain').setAttribute("class", "show");	
 	};
+	
 	window.clickedMenuItem = function(){
 		$id('courtain').setAttribute("class", "hide");
 		clearMenus();
