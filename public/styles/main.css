@@ -126,11 +126,16 @@ display: none;
     background: #ec008c;
     width: 180%;
     padding: 12px 24px;
+    position: fixed;
+    z-index: 4;
   }
+/*  #menuContainer > li:nth-child(2){
+    
+  }*/
 
   ul#menuContainer {
     width: 100%;
-    /*position: fixed;*/
+    position: relative;
 
     }
 
