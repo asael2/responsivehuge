@@ -110,7 +110,7 @@ background: rgba(0, 0, 0, 0.5);
 
 height: 100%;
 position: absolute;
-  width: 1%;
+  width: 0%;
 /*display: none;*/
 /*-webkit-transition: width 2s;
   transition: width 2s;*/
@@ -123,7 +123,7 @@ position: absolute;
 
 
 /*Mobile version-----------------------------*/
-@media only screen and (max-width:50em) { 
+@media only screen and (max-width:60em) { 
 
 
   body{
