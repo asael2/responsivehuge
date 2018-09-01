@@ -2,8 +2,6 @@
 
 ## Overview
 
-This exercise will have the candidate build a responsive site navigation driven by an AJAX request.
-
 Here are the guidelines for this exercise
 
 * No frameworks or libraries (this means jquery).
@@ -15,12 +13,6 @@ Here are the guidelines for this exercise
 $ npm i && npm start
 ```
 
-Nice to haves:
-
-* Adherence to accessibility standards
-* Documentation
-* Unit and/or E2E tests
-
 At a high level the navigation will have two main states
 
 * <768px: Mobile. Hamburger icon will display in the top-left of the page. Clicking the hamburger will cause a card to slide in and overlay the content from the left. The card will contain nav and sub-nav items defined in the JSONP response
@@ -28,11 +20,6 @@ At a high level the navigation will have two main states
 
 ## Version
 0.1.0
-
-## Files
-
-* Mockup - Illustrator file describing how the nav should behave
-* server.js - node.js server that will host the site and provie the api to construct the nav
 
 ## API
 
