@@ -1,4 +1,4 @@
-# Huge Navigation Exercise by asael2@gmail.com
+# Navigation Exercise by asael2@gmail.com
 
 ## Overview
 
